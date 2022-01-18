@@ -10,4 +10,3 @@ const factorial=(num)=>{
 console.log(factorial(4))
 
 
-//Factorial  of  a number  using  recursion
