@@ -28,6 +28,7 @@ function Stack(capacity) {
       this._capacity=capacity||Infinity;
       this.count=0;
       this.storage={}
+      this.rear={}
   }
   
   Stack.prototype.push = function(value) {
@@ -58,12 +59,29 @@ function Stack(capacity) {
   };
   // Time complexity:
   
-  Stack.prototype.count = function() {
+  Stack.prototype.Count = function() {
     return this.count;
   };
 
+  Stack.prototype.contains=function(value){
+    for(var i=this.count;i<this.rear;i++){
+      if(this.storage[i]===value){
+        return true
+      }
+      return false
+    }
+  }
+
+
   var myStack = new Stack(3);
   console.log(myStack.push('a'), 'should be 1');
-
+  console.log(myStack.push('b'), 'should be 2');
+  console.log(myStack.push('c'), 'should be 3');
+ console.log(myStack.pop());
+ console.log("This is  on top of the stack:",myStack.peek());
+  console.log("The total is",myStack.Count())
+console.log(myStack.contains('a'))
+//   console.log(myStack.pop(), 'should be c');
+//   console.log(myStack.pop(), 'should be c');
   // Time complexity:
   
