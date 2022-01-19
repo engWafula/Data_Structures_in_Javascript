@@ -22,4 +22,5 @@ var bubbleSort = function(array) {
     arr[i1] = arr[i1]^arr[i2];
     return arr;
   }
+ console.log(bubbleSort([1,2,34,5,8,29]))
  
