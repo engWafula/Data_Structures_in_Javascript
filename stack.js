@@ -55,7 +55,7 @@ function Stack(capacity) {
   // Time complexity:
   
   Stack.prototype.peek = function() {
-    return this.storage[this.count-1]
+    return this.storage[--this.count]
   };
   // Time complexity:
   
