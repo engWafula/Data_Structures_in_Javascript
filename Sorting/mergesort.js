@@ -1,5 +1,5 @@
 function mergeSortRecursive (array) {
-    // base case
+    //base case
     if (array.length <= 1) return array;
   
     // divide and conquer!!

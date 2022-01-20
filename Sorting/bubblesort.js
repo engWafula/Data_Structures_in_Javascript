@@ -1,6 +1,6 @@
 var bubbleSort = function(array) {
     // while wall > 0
-    var wall = array.length; // first sorted element
+    var wall = array.length; // length of  the array
     // iterate through array up to wall
     while (wall >= 0) {
       // if next value < current, swap
