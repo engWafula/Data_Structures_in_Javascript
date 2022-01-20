@@ -32,6 +32,8 @@ function mergeSortRecursive (array) {
     return splitArr[0];
   
   };
+  console.log(mergeSortRecursive([1000,9,491,61,2,34,6,8,10,0]))
+   console.log(mergeSortIterative([1000,9,491,61,2,34,6,8,10,0]))
   
   function merge(left, right) {
     var result = [], iLeft = 0, iRight = 0;
