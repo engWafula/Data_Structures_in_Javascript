@@ -29,6 +29,8 @@ function Stack(capacity) {
       this.count=0;
       this.storage={}
       this.rear={}
+      
+     
   }
   
   Stack.prototype.push = function(value) {
@@ -80,7 +82,7 @@ function Stack(capacity) {
  console.log(myStack.pop());
  console.log("This is  on top of the stack:",myStack.peek());
   console.log("The total is",myStack.Count())
-console.log(myStack.contains('a'))
+console.log(myStack.contains('c'))
 //   console.log(myStack.pop(), 'should be c');
 //   console.log(myStack.pop(), 'should be c');
   // Time complexity:

@@ -15,9 +15,9 @@ function Queue(capacity) {
   // Time complexity:
   
   Queue.prototype.dequeue = function() {
-    // if(this.head==0){
-    //     return "There is  nothing  to  remove  from the  queue"
-    // }   
+    if(this.head==0){
+        return "There is  nothing  to  remove  from the  queue"
+    }   
      var value=this.storage[this.head]
     delete this.storage[this.head]
     if(this.head<this.tail){

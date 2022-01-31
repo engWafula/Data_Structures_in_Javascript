@@ -71,8 +71,10 @@ function MinStack(capacity) {
     if (this._count < this._capacity) {
       if (this._min.peek() < value) {
         this._min.push(this._min.peek());
+        
       } else {
         this._min.push(value);
+        
       }
       this._storage[this._count++] = value;
       return this._count;
@@ -105,12 +107,12 @@ function MinStack(capacity) {
   MinStack.prototype.min = function() {
     return this._min.peek();
   };
-  var minStack=new MinStack(100)
+  var minStack=new MinStack(10)
   
 //    console.log(minStack.push('1'), 'should be 1');
 //    console.log(minStack.push('b'), 'should be 2');
 //     console.log(minStack.push('c'), 'should be 3');
-  console.log(minStack.push("100"))
+  console.log(minStack.push("90"))
 //   console.log(myStack.push('20'));
   console.log(minStack.push("60"))
   console.log(minStack.push("8"))
